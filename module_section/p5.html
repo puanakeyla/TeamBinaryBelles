@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital - Daftar Buku Kelas 10</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/class.css">
+</head>
+<body>
+
+     <!-- Navbar start -->
+<nav class="navbar">
+    <div class="navbar-logo">MODUL P5</div>
+  
+    <div class="navbar-extra">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  
+    <div class="navbar-nav">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#products">Modul</a>
+      <a href="../index.html#contact">Hubungi Kami</a>
+      <a href="../about.html">Tentang Kami</a>
+    </div>
+  </nav>
+  <!-- Navbar end -->  
+
+<main>
+    <section class="book-list">
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/P5/Bhinneka_Tunggal_Ika.png" alt="Buku 1">
+            </div>
+            <h3><span>Bhinneka Tunggal Ika</span></h3>
+            <div class="buttons">
+                <a href="pdf/P5/(Fase E ) - Bhineka Tunggal Ika (datadikdasmen.com).pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/P5/Bangunlah_Jiwa.png" alt="Buku 2">
+            </div>
+            <h3>Bangunlah Jiwa dan Raganya</h3>
+            <div class="buttons">
+                <a href="pdf/P5/(FASE E ) Bangunlah Jiwa dan Raganya (datadikdasmen.com).pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/P5/Jejak_Karbon.png" alt="Buku 3">
+            </div>
+            <h3>Jejak Karbon, Jejak Kita di Bumi</h3>
+            <div class="buttons">
+                <a href="pdf/P5/Fase E_Wina_Jejak Karbon, Jejak Kita di Bumi_2904121.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/P5/Kearifan_Lokal.png" alt="Buku 4">
+            </div>
+            <h3>Kearifan Lokal</h3>
+            <div class="buttons">
+                <a href="pdf/P5/Kearifan Lokal_Fase E_Debby Josephine_040521.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/P5/Suara_Demokrasi.png" alt="Buku 5">
+            </div>
+            <h3>Suara Demokrasi</h3>
+            <div class="buttons">
+                <a href="pdf/P5/Suara Demokrasi_Fase E_Ranald Indra_26052021.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/P5/Wirausaha.png" alt="Buku 6">
+            </div>
+            <h3>Wirausaha</h3>
+            <div class="buttons">
+                <a href="pdf/P5/Wirausaha SMA_Evy Verawaty.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+    </section>
+</main>
+
+<!-- Feather Icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+
+  const hamburger = document.querySelector("#hamburger-menu");
+  const navMenu = document.querySelector(".navbar-nav");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>

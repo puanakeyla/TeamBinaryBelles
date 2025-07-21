@@ -1,0 +1,176 @@
+.navbar {
+    display: flex;
+    justify-content: center;         /* Biar tulisannya di tengah */
+    align-items: center;
+    padding: 0.5rem;
+    color: #b40303;
+    font-weight: 1000;     
+    background-color: #d3d3d3;       /* Warna abu-abu */
+    border-bottom: 1px solid #aaa;   /* Garis abu-abu di bawah */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+main {
+    margin-top: 100px;  /* Sesuaikan dengan tinggi navbar */
+}
+  
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #b40303; /* kuning */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;  
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    column-gap: 20px; /* jarak antar kolom */
+    row-gap: 40px;    /* jarak antar baris */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #b40303;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-cover img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #b40303;
+}
+
+.buttons {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #b40303;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fba834;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #b40303;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 7%;
+    background-color: #efefefd9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #a51d1d;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column; /* penting untuk mobile */
+    align-items: flex-start; /* buat teks rata kiri */
+    padding-left: 1rem;
+    gap: 1.5rem;
+    transition: 0.3s;
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  .navbar .navbar-nav.active {
+    right: 0;
+  }  
+  
+  /* Styling navbar links agar ada underline halus saat hover */
+.navbar .navbar-nav a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    color: #891717;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: normal; 
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin-top: 4px;
+    right: 0;
+    background: #891717;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    width: 100%;
+    left: 0;
+    background-color: #891717;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #891717;
+  }
+  
+  .navbar .navbar-nav a.active::after {
+  width: 100%;
+}

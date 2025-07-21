@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital - Daftar Buku Kelas 10</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/class.css">
+</head>
+<body>
+
+    <a href="#" class="active">Modul</a>
+
+    <!-- Navbar start -->
+<nav class="navbar">
+    <div class="navbar-logo">DAFTAR BUKU KELAS 10</div>
+  
+    <div class="navbar-extra">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  
+    <div class="navbar-nav">
+      <a href="../index.html#home">Home</a>
+      <a href="../index.html#products">Modul</a>
+      <a href="../index.html#contact">Hubungi Kami</a>
+      <a href="../about.html">Tentang Kami</a>
+    </div>
+  </nav>
+  <!-- Navbar end -->  
+        
+<main>
+    <section class="book-list">
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/Agama_Islam_Kelas_10.png" alt="Buku 1">
+            </div>
+            <h3><span>Pendidikan Agama Islam</span> <br>dan Budi Pekerti</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/Agama_Islam_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/Bahasa_Indonesia_Kelas_10.png" alt="Buku 2">
+            </div>
+            <h3>Bahasa Indonesia</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/Bahasa_Indonesia_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/Bahasa_Inggris_Kelas_10.png" alt="Buku 3">
+            </div>
+            <h3>Bahasa Inggris</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/Bahasa_Inggris_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/Informatika_Kelas_10.png" alt="Buku 4">
+            </div>
+            <h3>Informatika</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/Informatika_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/IPA_Kelas_10.png" alt="Buku 5">
+            </div>
+            <h3>Ilmu Pengetahuan Alam</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/IPA_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/IPS_Kelas_10.png" alt="Buku 6">
+            </div>
+            <h3>Ilmu Pengetahuan Sosial</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/IPS_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/Matematika_Kelas_10.png" alt="Buku 7">
+            </div>
+            <h3>Matematika</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/Matematika_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+
+        <article class="book-item">
+            <div class="book-cover">
+                <img src="cover/class_10/PPKn_Kelas_10.png" alt="Buku 8">
+            </div>
+            <h3>Pendidikan Pancasila</h3>
+            <div class="buttons">
+                <a href="pdf/Kelas_10/PPKN_Kelas_10.pdf" class="btn">PDF</a>
+            </div>
+        </article>
+    </section>
+</main>
+
+<!-- Feather Icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+
+  const hamburger = document.querySelector("#hamburger-menu");
+  const navMenu = document.querySelector(".navbar-nav");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
